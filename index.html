@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <main> 
+    <!-- Главное меню -->
       <header class="main-header">
         <div class="container">
           <div class="logo">
@@ -32,51 +32,53 @@
           </div>      
         </div>       
       </header> 
+      
+      <main> 
     
       <!-- Слайдер -->
-      <div class="index-slider">
+      <div class="slider">
       </div> 
         
-      <!-- Предложения -->
-      <div class="offers">
-        <article class="offers-red">
+      <!-- Блок услуг -->
+      <div class="services">
+        <article class="service-red">
           <a href="#"><img src="img/offer-1.jpg" alt="веб-сайты" width="240" height="125"></a>
-          <span class="offers">Веб-сайты</span> 
+          <span class="service-title">Веб-сайты</span> 
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>   
-          <a href="#" class="btn offers-red">Заказать</a>
+          <a href="#" class="btn btn-red">Заказать</a>
         </article>
-        <article class="offers-green">
+        <article class="service-green">
           <a href="#"><img src="img/offer-2.jpg" alt="Приложения" width="240" height="125"></a>
-          <span class="offers">Приложения</span> 
+          <span class="service-title">Приложения</span> 
           <p>Покорите топ-10 приложений в AppStrore и Google Play</p>   
-          <a href="#" class="btn offers-green">Заказать</a>
+          <a href="#" class="btn btn-green">Заказать</a>
         </article>
-        <article class="offers-yellow">
+        <article class="service-yellow">
           <a href="#"><img src="img/offer-3.jpg" alt="Презентации" width="240" height="125"></a>
-          <span class="offers">Презентации</span> 
+          <span class="service-title">Презентации</span> 
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>   
-          <a href="#" class="btn offers-yellow">Заказать</a>
+          <a href="#" class="btn btn-yellow">Заказать</a>
         </article>
       </div>
       <hr>
         
       <!-- О компании -->
-      <div class="about">
-        <div class="about-leftColumn">
-          <h2 class="about">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+      <div class="aboutUs">
+        <div class="aboutUs-leftColumn">
+          <h1 class="aboutUs-title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
           <p> Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <h3 class="about">Выполняем заказы на разработку:</h3>   
-          <ul class="about">
+          <h2 class="aboutUs-subTitle">Выполняем заказы на разработку:</h2>   
+          <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>  
           </ul>
         </div>
-        <div class="about-rightColumn">
+        <div class="aboutUs-rightColumn">
           <img src="img/logo-about.png" width="240" height="122">
-          <h3 class="about">КАК Мы работаем:</h3>
-          <ul class="about">
+          <h2 class="aboutUs-subTitle">КАК Мы работаем:</h2>
+          <ul>
             <li>С самоотдачей 146%</li>
             <li>Соблюдая сроки на 100%</li>
             <li>По предоплате 50%</li>  
@@ -99,17 +101,27 @@
       <!-- Карта и контакты -->
       <div class="map">
         <div class="map-adds">
-          <p class="map-adds"><strong>NЁRDS</strong>DESIGN STUDIO</p>
+          <p><strong>NЁRDS</strong>DESIGN STUDIO</p>
           <p>191186, Санкт-Петербург,<br> 
 ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>   
-          <a class="btn map-adds" href="#">НАПИШИТЕ НАМ</a>    
+          <a class="btn" href="#">НАПИШИТЕ НАМ</a>    
         </div>
         <img src="img/map.jpg" width="1200" height="416" alt="карта">  
       </div>
       
-        
-      <footer></footer>
+      <!-- Footer -->    
+      <footer class="pade-footer">
+        <div class="socials">
+          <a href="//vk.com" class="socials-btn-vk">Вконтакте</a>
+          <a href="//facebook.com" class="socials-btn-fb">Facebook</a>
+          <a href="//instagram.com" class="socials-btn-inst">Instagram</a>
+        </div>
+        <div class="pade-footer-text">
+          <span>Давайте дружить, это выгодно!</span>
+          <p class="pade-footer-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
       
         
   </main>  
