@@ -8,12 +8,12 @@
   <body>
       <header class="main-header">
         <div class="container">
-          <nav class="main-navigation">
-            <div class="logo">
-              <a href="/index.html">
-                <img src="img/logo.png" alt="logo" width="139 px" height="56 px">    
-              </a>
+          <div class="logo">
+            <a href="/index.html">
+              <img src="img/logo.png" alt="logo" width="139 px" height="56 px">    
+            </a>
           </div>
+          <nav class="main-navigation">
             <ul>
               <li>
                 <a href="#">Студия</a>    
@@ -36,11 +36,13 @@
          
       </header> 
       
-      <div class="container catalog-title">
-          <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br>
-              ГОТОВЫХ МАКЕТОВ
-          </h1>
-      </div> 
+      <div class="container">
+        <div class="catalog-title">
+            <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br>
+                ГОТОВЫХ МАКЕТОВ
+            </h1>
+        </div> 
+      </div>      
       
       <main class="container">        
         
@@ -63,53 +65,43 @@
                 </div> 
                 <fieldset class="filter-grids">
                   <legend>Сетка:</legend>
-                  <ul>
-                    <li>
+                  
                       <label for="responsive">Адаптивная
                       </label>
                       <input type="radio" name="grid" id="responsive" checked>
-                    </li>
-                    <li>
+                    
                       <label for="fixed">Фиксированная
                       </label>
                       <input type="radio" name="grid" id="fixed">
-                    </li>
-                    <li>
+                    
                       <label for="fluid">Резиновая
                       </label>
                       <input type="radio" name="grid" id="fluid">
-                    </li>
-                  </ul>
+                    
                 </fieldset>
                 <fieldset class="filter-modules">
                   <legend>Особенности:</legend>
-                  <ul>
-                    <li>
+                  
                       <label for="slider">Слайдер
                       </label>
                       <input type="checkbox" name="slider" id="slider" checked>
-                    </li>
-                    <li>
+                    
                       <label for="advantages">Блок преимуществ
                       </label>
                       <input type="checkbox" name="advantages" id="advantages">
-                    </li>
-                    <li>
+                    
                       <label for="news">Новости
                       </label>
                       <input type="checkbox" name="news" id="news" checked>
-                    </li>
-                    <li>
+                    
                       <label for="gallery">Галерея
                       </label>
                       <input type="checkbox" name="gallery" id="gallery">
-                    </li>
-                    <li>
+                   
                       <label for="cart">Корзина
                       </label>
                       <input type="checkbox" name="cart" id="cart">
-                    </li>
-                  </ul>
+                   
                 </fieldset>
                 <button type="submit">Показать</button>
               </form>
@@ -230,10 +222,10 @@
              <!-- Пагинация -->
              <div class="paginator">
                <ul>    
-                 <li>1</li>
-                 <li><a class="btn" href="#2">2</li>
-                 <li><a class="btn" href="#3">3</a></li>
-                 <li><a class="btn" href="#">Следующая</a></li>
+                 <li class="paginator-active">1</li>
+                 <li><a href="#">2</li>
+                 <li><a href="#">3</a></li>
+                 <li><a href="#">Следующая</a></li>
                </ul>      
              </div>              
           </div>
@@ -257,14 +249,16 @@
         
         <!-- Footer -->    
         <footer class="page-footer">
-          <div class="page-footer-socials">
-            <a href="//vk.com" class="socials-btn-vk">Вконтакте</a>
-            <a href="//facebook.com" class="socials-btn-fb">Facebook</a>
-            <a href="//instagram.com" class="socials-btn-inst">Instagram</a>
-          </div>
-          <div class="page-footer-text">
-            <span>Давайте дружить, это выгодно!</span>
-            <p class="page-footer-text">Скидка 10% для друзей из социальных сетей.</p>
+          <div class="container">
+            <div class="page-footer-socials">
+              <a href="//vk.com" class="socials-btn-vk">Вконтакте</a>
+              <a href="//facebook.com" class="socials-btn-fb">Facebook</a>
+              <a href="//instagram.com" class="socials-btn-inst">Instagram</a>
+            </div>
+            <div class="page-footer-text">
+              <span>Давайте дружить, это выгодно!</span>
+              <p class="page-footer-text">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
           </div>
         </footer>
       
