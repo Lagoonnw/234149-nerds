@@ -21,3 +21,175 @@ h2 {
   color: #000000;
   line-height: 100%;    
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.main-header {  
+  background-color: #eeeeee;
+}
+
+.slider-wrapper {
+  background-color: #eeeeee; 
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;  
+}
+
+
+.logo {
+  width: 140px;
+  float: left;
+  margin-right: 20px;
+    
+  /*для сетки*/
+  min-height: 85px;
+  background-color: #FFFF99;
+}
+
+.main-navigation {
+  width: 560px;
+  float: left;
+    
+  /*для сетки*/
+  min-height: 85px;
+  background-color: #FFFF99;
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.cart {
+  width: 100px;   
+  float: right;
+    
+  /*для сетки*/
+  min-height: 85px;
+  background-color: #FFFF99;
+}
+
+.slider {
+  width: 880px;
+  height: 350px;
+
+  /*для сетки*/
+  background-color: #FFCCFF;
+}
+
+.services {
+  /*margin-bottom: 140px;*/   
+}
+
+.service-title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.service-red {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+  font-size: 15px;
+
+  /*для сетки*/
+  min-height: 300px;
+  background-color: #CCFFFF;
+}
+
+.service-green {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+  font-size: 15px;
+
+  /*для сетки*/
+  min-height: 300px;
+  background-color: #CCFFFF;
+}
+
+.service-yellow {
+  width: 240px;
+  float: left;
+  margin-right: 0;
+  font-size: 15px;
+    
+  /*для сетки*/
+  min-height: 300px;
+  background-color: #CCFFFF;   
+}
+
+.about-us {
+  margin-bottom: 72px;
+}
+
+.about-us-left-column {
+  width: 620px;
+  float: left;
+  
+ /*для сетки*/
+ min-height: 345px;
+ background-color: #FFFFCC;
+}
+
+.about-us-right-column {
+ width: 230px;
+ float: right;
+    
+ /*для сетки*/
+ min-height: 345px;
+ background-color: #FFFFCC;
+}
+
+.our-clients {
+  width: 880px;
+    margin-bottom: 85px;
+  
+  /*для сетки*/
+  min-height: 166px;
+  background-color: #99CCFF;
+}
+
+.map-wrapper {
+  min-height: 416px;
+  
+}
+/* img/map.jpg*/
+
+.map-address {
+  width: 250px;
+  height: 240px;
+  background-color: #ffffff;
+    
+  float: left;
+}
+
+.map-img {
+ margin: 0 auto;
+}
+
+.page-footer-socials {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+
+  /*для сетки*/
+  min-height: 216px;
+  background-color: #FFFFCC;
+}
+
+.page-footer-text {
+  width: 550px;
+  float: left;
+ 
+  /*для сетки*/
+  min-height: 166px;
+  background-color: #FFFFCC;
+}
