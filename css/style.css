@@ -87,7 +87,6 @@ h2 {
 }
 
 .slider {
-  width: 880px;
   height: 350px;
 
   /*для сетки*/
@@ -150,7 +149,7 @@ h2 {
 }
 
 .about-us-right-column {
- width: 230px;
+ width: 240px;
  float: right;
     
  /*для сетки*/
@@ -170,7 +169,11 @@ h2 {
 
 
 .map-wrapper {
-  min-height: 416px;  
+  min-height: 415px;  
+}
+
+.map {
+  position: relative;
 }
 
 
@@ -182,7 +185,7 @@ h2 {
   margin-bottom: 0;
     
   position: absolute;
-  bottom: -885px;  
+  bottom: 90px;   
 }
    
 
@@ -193,7 +196,7 @@ h2 {
 }
 
 .page-footer {
-  padding: 80px 0 75px 0;
+  padding: 70px 0 70px 0;
   
   /* для сетки */
   background-color: #eeeeee;
@@ -236,7 +239,7 @@ h2 {
 .filters {
   width: 240px;
     
-  /**/
+  /* для сетки */
   min-height: 730px;
   background-color: beige;
 }
@@ -253,10 +256,17 @@ h2 {
 }
 
 .catalog-item {
+  width: 240px;
   display: inline-block;
+  margin-bottom: 80px;
   vertical-align: top;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 18px; 
+  position: relative;
+}
+
+.catalog-item:nth-child(odd) {
+  margin-right: 80px;
 }
 
 .catalog-item-title {
@@ -267,16 +277,32 @@ h2 {
 .catalog-item-form {
   width: 200px;
   min-height: 200px;
+  position: absolute;
+  top: 20px;
+  background-color: #ffffff;
+}
+
+.items-filter {
+  
+  margin-bottom: 15px;
+  
+  /* для сетки*/
+  min-height: 20px;
+  background-color: #eeeeee;
 }
 
 .items-filter-title {
+  width: 86px;
   float: left;
-  margin-right: 40px;
+  margin-right: 40px;  
 }
 
 .items-filter-category {
+  width: 304px;
   float: left;
   margin: 0;
+  
+  
 }
 
 .items-filter-category li {
@@ -286,7 +312,16 @@ h2 {
 
 
 .items-filter-controls {
+  width: 28px;
   float: right;
+}
+
+.paginator {
+  margin-bottom: 80px;
+  
+  /*для сетки*/
+  min-height: 40px;
+  background-color: #eeeeee;
 }
 
 .paginator li {
