@@ -7,7 +7,7 @@
   </head>
   <body>
       <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
           <div class="logo">
             <a href="/index.html">
               <img src="img/logo.png" alt="logo" width="139 px" height="56 px">    
@@ -46,7 +46,7 @@
         </div>     
       </div>
       
-      <main class="container">        
+      <main class="container clearfix">        
         
           <!-- Левая колонка фильтры -->
           <div class="column-left-filters">
@@ -112,16 +112,13 @@
           
           <!-- Правая колонка продукты -->
           <div class="column-right-items">
-            <div class="items-filter">
+            <div class="items-filter clearfix">
               <div class="items-filter-title"> Сортировать:
               </div>
-              <ul>
-                <li>По цене
-                </li>
-                <li> <a href="#">По типу</a>
-                </li>
-                <li> <a href="#">По функционалу</a>
-                </li>
+              <ul class="items-filter-category">
+                <li>По цене</li>
+                <li> <a href="#">По типу</a></li>
+                <li> <a href="#">По функционалу</a></li>
               </ul>
               <div class="items-filter-controls">
                 <a href="#" class="items-filter-controls-down">вниз</a> 
@@ -160,7 +157,7 @@
                 </div>
               </article>
                 
-                <article class="catalog-item">
+              <article class="catalog-item">
                 <div class="catalog-item-img">
                   <img src="img/item3.jpg" width="240" height="240" alt="FORTE">
                 </div>
@@ -176,19 +173,19 @@
               </article>
                 
                <article class="catalog-item">
-                <div class="catalog-item-img">
-                  <img src="img/item4.jpg" width="240" height="240" alt="Modern Organic THAI">
-                </div>
-                <div class="catalog-item-form">
-                  <h2 class="catalog-item-title">Modern Organic THAI
-                  </h2>
-                  <p class="catalog-item-about">
-                    <a href="#">Сайт для ресторана быстрого питания
-                    </a>
-                  </p> 
-                  <a class="btn catalog-item-btn" href="#">12000 р.</a>                  
-                </div>
-              </article>
+                 <div class="catalog-item-img">
+                   <img src="img/item4.jpg" width="240" height="240" alt="Modern Organic THAI">
+                 </div>
+                 <div class="catalog-item-form">
+                   <h2 class="catalog-item-title">Modern Organic THAI
+                   </h2>
+                   <p class="catalog-item-about">
+                     <a href="#">Сайт для ресторана быстрого питания
+                     </a>
+                   </p> 
+                   <a class="btn catalog-item-btn" href="#">12000 р.</a>                  
+                 </div>
+               </article>
               
               <article class="catalog-item">
                 <div class="catalog-item-img">
@@ -236,25 +233,27 @@
         
           
          <!-- Карта и контакты -->
-      <div class="map-wrapper clearfix">
+      <div class="map-wrapper">  
         <div class="map">
-          <div class="map-address">
-            <p><strong>NЁRDS</strong>DESIGN STUDIO</p>
-            <p>191186, Санкт-Петербург,<br> 
-ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>   
-            <a class="btn" href="#">НАПИШИТЕ НАМ</a>    
-          </div>   
           <div class="map-img">
-           <img src="/img/map.jpg" alt="карта" width="1199" height="416">
+              <img src="/img/map.jpg" alt="карта" width="1199" height="416">
+          </div>
+          <div class="container">          
+            <div class="map-address">
+              <p><strong>NЁRDS</strong>DESIGN STUDIO</p>
+              <p>191186, Санкт-Петербург,<br> 
+ул. Б. Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812) 275-75-75</p>   
+              <a class="btn" href="#">НАПИШИТЕ НАМ</a>    
+            </div>            
           </div>
         </div>
-     </div>
+      </div>
   
         
         <!-- Footer -->    
         <footer class="page-footer">
-          <div class="container">
+          <div class="container clearfix">
             <div class="page-footer-socials">
               <a href="//vk.com" class="socials-btn-vk">Вконтакте</a>
               <a href="//facebook.com" class="socials-btn-fb">Facebook</a>
