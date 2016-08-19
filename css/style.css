@@ -169,8 +169,15 @@ h2 {
   background-color: #FFCCFF;
 }
 
-.services {
-  margin-bottom: 40px;  
+.services {  
+  width: 240px;
+  float: left;  
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+.services p {
+  font-size: 15px;
 }
 
 .service-title {
@@ -178,34 +185,23 @@ h2 {
   line-height: 30px;
 }
 
-.service-red {
-  width: 240px;
-  float: left;
-  margin-right: 80px;
-  font-size: 15px;
+.service-red {   
 
   /*для сетки*/
   min-height: 300px;
   background-color: #CCFFFF;
 }
 
-.service-green {
-  width: 240px;
-  float: left;
-  margin-right: 80px;
-  font-size: 15px;
+.service-green {   
 
   /*для сетки*/
   min-height: 300px;
   background-color: #CCFFFF;
 }
 
-.service-yellow {
-  width: 240px;
-  float: left;
-  margin-right: 0;
-  font-size: 15px;
-    
+.service-yellow {    
+  margin-right: 0;  
+  
   /*для сетки*/
   min-height: 300px;
   background-color: #CCFFFF;   
@@ -316,7 +312,7 @@ h2 {
     
   /* для сетки */
   min-height: 730px;
-  background-color: beige;
+  background-color: #eeeeee;
 }
 
 
