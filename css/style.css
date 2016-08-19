@@ -29,6 +29,24 @@ h2 {
   clear: both;
 }
 
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;     
+  background: #f1f1f1;  
+  padding: 10px 40px;
+}
+
+.btn:active {
+  box-shadow: inset 0 2px 0 0 #b5b5b5;
+}
 
 .main-header {  
   background-color: #eeeeee;
@@ -169,6 +187,10 @@ h2 {
   background-color: #FFCCFF;
 }
 
+.services-container {
+  border-bottom: 2px solid #eeeeee;
+}
+
 .services {  
   width: 240px;
   float: left;  
@@ -178,33 +200,42 @@ h2 {
 
 .services p {
   font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 24px;
 }
 
 .service-title {
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;  
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
-.service-red {   
-
-  /*для сетки*/
-  min-height: 300px;
-  background-color: #CCFFFF;
+.service-red {    
 }
 
 .service-green {   
 
-  /*для сетки*/
-  min-height: 300px;
-  background-color: #CCFFFF;
 }
 
 .service-yellow {    
-  margin-right: 0;  
-  
-  /*для сетки*/
-  min-height: 300px;
-  background-color: #CCFFFF;   
+  margin-right: 0;     
+}
+
+.service-btn-red {
+  color: #fff;
+  background: #fb565a;
+}
+
+.service-btn-green {
+  color: #fff;
+  background: #00ca74;
+}
+
+.service-btn-yellow {
+  color: #fff;
+  background: #efc84a;
 }
 
 .about-us {
@@ -229,16 +260,22 @@ h2 {
  background-color: #FFFFCC;
 }
 
-.our-clients {
-  width: 880px;
-  padding: 35px 0 25px 0;
+.our-clients {    
   margin-bottom: 85px;
-  
-  /*для сетки*/
-  min-height: 106px;
-  background-color: #99CCFF;
+  border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;  
 }
 
+.our-clients-logo {
+  width: 210px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 95px 30px 10px;  
+}
+
+.our-clients-logo:last-child {
+  margin-right: 10px;
+}
 
 .map-wrapper {
   min-height: 415px;  
@@ -251,8 +288,9 @@ h2 {
 
 .map-address {
   display: block;
-  width: 250px;
-  height: 240px;
+  width: 204px;
+  height: 204px;
+  padding: 18px 22px;
   background-color: #ffffff;
   margin-bottom: 0;
     
@@ -260,7 +298,19 @@ h2 {
   bottom: 90px;   
 }
    
+.map-address p {
+  color: #666666;
+  line-height: 20px;  
+}
 
+.map-address .map-address-phone {
+  margin-bottom: 20px;
+}
+
+.map-address span {
+  color: #000;
+  text-transform: uppercase;
+}
 
 .map-img img {
   display: block;
@@ -300,6 +350,7 @@ h2 {
 
 .catalog-title h1 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .column-left-filters {
@@ -398,3 +449,4 @@ h2 {
 .paginator li {
   display: inline-block;
 }
+
