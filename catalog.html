@@ -54,19 +54,25 @@
           <div class="column-left-filters">
             <div class="filters">
               <form>
-                <!-- Форма с двумя бегунками-->
-                <div class="filter-range">
-                  <div class="filter-range-controls">
-                  </div>  
-                  <div class="filter-range-cost">
-                    <label for="min-cost">от
-                    </label>    
-                    <input type="text" id="min-cost" value="0">
-                    <label for="max-cost">до
-                    </label>    
-                    <input type="text" id="max-cost" value="15000">
-                  </div> 
-                </div> 
+                <fieldset>
+                  <legend>стоимость:</legend>
+                  
+                  <!-- Форма с двумя бегунками-->                  
+                    
+                    <div class="filter-range-controls">
+                    </div> 
+                  
+                    <div class="filter-range-cost">
+                      <label for="min-cost">от
+                      </label>    
+                      <input type="text" id="min-cost" value="0">
+                      <label for="max-cost">до
+                      </label>    
+                      <input type="text" id="max-cost" value="15000">
+                    </div> 
+                  
+                
+                </fieldset>
                 <fieldset class="filter-grids">
                   <legend>Сетка:</legend>
                   
@@ -118,13 +124,13 @@
               <div class="items-filter-title"> Сортировать:
               </div>
               <ul class="items-filter-category">
-                <li>По цене</li>
-                <li> <a href="#">По типу</a></li>
-                <li> <a href="#">По функционалу</a></li>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
               </ul>
               <div class="items-filter-controls">
-                <a href="#" class="items-filter-controls-down">></a> 
-                <a href="#" class="items-filter-controls-up"><</a>  
+                <a href="#" class="items-filter-controls-down">вниз</a> 
+                <a href="#" class="items-filter-controls-up">вверх</a>  
               </div>
             </div>  
             
@@ -223,10 +229,10 @@
              <!-- Пагинация -->
              <div class="paginator">
                <ul>    
-                 <li class="paginator-active">1</li>
-                 <li><a href="#">2</a></li>
-                 <li><a href="#">3</a></li>
-                 <li><a href="#">Следующая</a></li>
+                 <li><a href="#"class="btn paginator-active">1</a></li>
+                 <li><a href="#" class="btn">2</a></li>
+                 <li><a href="#" class="btn">3</a></li>
+                 <li><a href="#" class="btn">Следующая</a></li>
                </ul>      
              </div>              
           </div>
@@ -246,7 +252,7 @@
               <p>191186, Санкт-Петербург,<br> 
 ул. Б. Конюшенная, д. 19/8</p>
               <p>тел. +7 (812) 275-75-75</p>   
-              <a class="btn" href="#">НАПИШИТЕ НАМ</a>    
+              <a class="btn map-write-btn" href="#">НАПИШИТЕ НАМ</a>    
             </div>            
           </div>
         </div>
@@ -257,9 +263,9 @@
         <footer class="page-footer">
           <div class="container clearfix">
             <div class="page-footer-socials">
-              <a href="//vk.com" class="socials-btn-vk">Вконтакте</a>
-              <a href="//facebook.com" class="socials-btn-fb">Facebook</a>
-              <a href="//instagram.com" class="socials-btn-inst">Instagram</a>
+              <a href="//vk.com" class="socials-btn-vk"><span>Вконтакте</span></a>
+              <a href="//facebook.com" class="socials-btn-fb"><span>Facebook</span></a>
+              <a href="//instagram.com" class="socials-btn-inst"><span>Instagram</span></a>
             </div>
             <div class="page-footer-text">
               <span>Давайте дружить, это выгодно!</span>
