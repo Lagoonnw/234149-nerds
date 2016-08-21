@@ -156,7 +156,7 @@ h2 {
   width: 15px;
   height: 15px;
   
-  background-image: url(/img/icon-sprite.png);
+  background-image: url("/img/icon-sprite.png");
   background-position: 0 -68px;
 }
 
@@ -167,7 +167,7 @@ h2 {
   width: 15px;
   height: 15px;
   
-  background-image: url(/img/icon-sprite.png);
+  background-image: url("/img/icon-sprite.png");
   background-position: -26px -68px;
 }
 
@@ -179,7 +179,7 @@ h2 {
   height: 15px;
   opacity: 0.5;
   
-  background-image: url(/img/icon-sprite.png);
+  background-image: url("/img/icon-sprite.png");
   background-position: 0 -68px;
   
 }
