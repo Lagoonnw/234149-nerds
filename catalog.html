@@ -53,22 +53,32 @@
           <!-- Левая колонка фильтры -->
           <div class="column-left-filters">
             <div class="filters">
-              <form>
+              <form action="form.php" method="GET">
                 <fieldset>
                   <legend>стоимость:</legend>
                   
-                  <!-- Форма с двумя бегунками-->                  
+                  <!-- Форма с двумя бегунками-->   
+                    <div class="filter-range">
                     
-                    <div class="filter-range-controls">
-                    </div> 
+                      <div class="filter-range-controls">
+                        <div class="filter-range-controls-scale">
+                          <div class="filter-range-controls-bar"></div>
+                        </div>
+                        <div class="toogle toogle-min"></div>
+                        <div class="toogle toogle-max"></div>
+                      </div> 
                   
-                    <div class="filter-range-cost">
-                      <label for="min-cost">от
-                      </label>    
-                      <input type="text" id="min-cost" value="0">
-                      <label for="max-cost">до
-                      </label>    
-                      <input type="text" id="max-cost" value="15000">
+                      <div class="filter-range-cost">
+                        <label for="min-cost">от
+                          <input type="text" id="min-cost" value="0">
+                        </label>
+                        
+                        
+                        <label for="max-cost">до
+                          <input type="text" id="max-cost" value="15000">
+                        </label>    
+                        
+                      </div>
                     </div> 
                   
                 
@@ -252,7 +262,7 @@
              <!-- Пагинация -->
              <div class="paginator">
                <ul>    
-                 <li><a href="#"class="btn paginator-active">1</a></li>
+                 <li><a class="btn paginator-active">1</a></li>
                  <li><a href="#" class="btn">2</a></li>
                  <li><a href="#" class="btn">3</a></li>
                  <li><a href="#" class="btn">Следующая</a></li>
