@@ -277,10 +277,8 @@
           
          <!-- Карта и контакты -->
       <div class="map-wrapper">  
-        <div class="map">
-          <div class="map-img">
-              <img src="img/map.jpg" alt="карта" width="1199" height="416">
-          </div>
+        <div class="map">          
+          <div id="yandex-map"></div>              
           <div class="container">          
             <div class="map-address">
               <p><strong>NЁRDS</strong>DESIGN STUDIO</p>
@@ -316,11 +314,11 @@
            <form class="write-us" method="post" id="write-us">
              <label for="write-name">
                <p class="write-us-p">Ваше имя:</p> 
-               <input class="write-us-field" type="text" name="name" id="write-name" placeholder="представьтесь, пожалуйста">
+               <input class="write-us-field" type="text" name="write-name" id="write-name" placeholder="представьтесь, пожалуйста">
              </label>         
              <label for="write-email">
                <p class="write-us-p">Ваш e-mail:</p>
-               <input class="write-us-field" type="text" name="email" id="write-email" placeholder="для отправки ответа">
+               <input class="write-us-field" type="text" name="e-mail" id="write-email" placeholder="для отправки ответа">
              </label>         
              <label for="mail-text">
                <p class="write-us-p">Текст письма:</p>
@@ -329,6 +327,10 @@
              <button class="btn write-us-btn" type="submit">отправить</button>  
           </form>    
         </div> 
-   
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yWFhp-KiCalvKTJ02pRcF48aC85eirLO&amp;width=100%&amp;height=416&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
+  
 </html>
