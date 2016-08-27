@@ -161,20 +161,19 @@
       
       
       <!-- Карта и контакты -->
-      <div class="map-wrapper">  
-        <div class="map-img">
-          <img src="img/map.jpg" alt="карта" width="1199" height="416">
+      <div class="map-wrapper">         
+        <div id="yandex-map"></div>        
+        
+        <div class="container">  
+          <div class="map">
+            <div class="map-address">
+              <p><span>nёrds design studio</span></p>
+              <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+              <p class="map-address-phone">тел. +7 (812) 275-75-75</p>   
+              <a class="btn map-write-btn" href="#">напишите нам</a>    
+             </div>            
+           </div>
         </div>
-          <div class="container">  
-            <div class="map">
-              <div class="map-address">
-                <p><span>nёrds design studio</span></p>
-                <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-                <p class="map-address-phone">тел. +7 (812) 275-75-75</p>   
-                <a class="btn map-write-btn" href="#">напишите нам</a>    
-              </div>            
-            </div>
-         </div>
        </div>
     
       
@@ -216,6 +215,6 @@
     
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
-   
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yWFhp-KiCalvKTJ02pRcF48aC85eirLO&amp;width=100%&amp;height=416&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>   
   </body>
 </html>
