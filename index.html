@@ -80,8 +80,8 @@
             
             
           
-        </div>
       </div>
+      
       
       <main class="container">    
       
@@ -89,19 +89,19 @@
       <!-- Блок услуг -->
       <div class="services-container clearfix">
         <article class="services service-red">
-          <a href="#"><img src="img/offer-1.jpg" alt="веб-сайты" width="240" height="125"></a>
+          <a href="#"><img src="img/offer-1.jpg" alt="веб-сайты" width="240" height="124"></a>
           <h2 class="service-title">Веб-сайты</h2> 
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>   
           <a href="#" class="btn service-btn-red">Заказать</a>
         </article>
         <article class="services service-green">
-          <a href="#"><img src="img/offer-2.jpg" alt="Приложения" width="240" height="125"></a>
+          <a href="#"><img src="img/offer-2.jpg" alt="Приложения" width="240" height="124"></a>
           <h2 class="service-title">Приложения</h2> 
           <p>Покорите топ-10 приложений в AppStrore и Google Play</p>   
           <a href="#" class="btn service-btn-green">Заказать</a>
         </article>
         <article class="services service-yellow">
-          <a href="#"><img src="img/offer-3.jpg" alt="Презентации" width="240" height="125"></a>
+          <a href="#"><img src="img/offer-3.jpg" alt="Презентации" width="240" height="124"></a>
           <h2 class="service-title">Презентации</h2> 
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>   
           <a href="#" class="btn service-btn-yellow">Заказать</a>
@@ -155,7 +155,7 @@
           <a href="#">
             <img src="img/borodinski.png" alt="borodinski" width="209" height="90">               
           </a>
-        </div>         
+        </div>       
       </div>
     </main> 
       
@@ -192,7 +192,30 @@
           </div>
         </div>
       </footer>
+    
+    <!-- модальное окно -->
       
+    <div class="modal-content">
+      <button class="btn modal-content-close" type="button" title="закрыть">закрыть</button>
+      <form class="write-us" method="post" id="write-us">
+        <label for="write-name">
+          <p class="write-us-p">Ваше имя:</p> 
+          <input class="write-us-field" type="text" name="name" id="write-name" placeholder="представьтесь, пожалуйста">
+        </label>         
+        <label for="write-email">
+          <p class="write-us-p">Ваш e-mail:</p>
+          <input class="write-us-field" type="text" name="email" id="write-email" placeholder="для отправки ответа">
+        </label>         
+        <label for="mail-text">
+          <p class="write-us-p">Текст письма:</p>
+          <textarea class="write-us-text" form="write-us" name="mail-text" id="mail-text">в свободной форме</textarea> 
+        </label>        
+        <button class="btn write-us-btn" type="submit">отправить</button>      
+      </form>    
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
    
   </body>
 </html>

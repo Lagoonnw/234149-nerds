@@ -41,7 +41,7 @@
       <div class="title-wrapper">
         <div class="container">
           <div class="catalog-title">
-            <h1>добро пожаловать в мазазин<br>
+            <h1>добро пожаловать в магазин<br>
                 готовых макетов
             </h1>
           </div> 
@@ -162,7 +162,7 @@
                 <li><a href="#">По функционалу</a></li>
               </ul>
               <div class="items-filter-controls">
-                <a href="#" class="items-filter-controls-down">вниз</a> 
+                <a href="#" class="items-filter-controls-down active-down">вниз</a> 
                 <a href="#" class="items-filter-controls-up">вверх</a>  
               </div>
             </div>  
@@ -174,12 +174,14 @@
                 </div>
                 <div class="catalog-item-form">
                   <h2 class="catalog-item-title">AVIATOR
-                  </h2>
-                  <p class="catalog-item-about">
+                  </h2>                  
+                  <p class="catalog-item-about">                  
                     <a href="#">Одностраничный макет с авторским дизайном
                     </a>
                   </p> 
-                  <a class="btn catalog-item-btn" href="#">8000 р.</a>                  
+                  
+                    <a class="btn catalog-item-btn" href="#">8000 р.</a>  
+                    
                 </div>
               </article>
                 
@@ -191,7 +193,7 @@
                   <h2 class="catalog-item-title">Sunset
                   </h2>
                   <p class="catalog-item-about">
-                    <a href="#">Интернет-магазин с личным кабинетом
+                    <a href="#">Интернет-магазин<br> с личным кабинетом
                     </a>
                   </p> 
                   <a class="btn catalog-item-btn" href="#">10000 р.</a>                  
@@ -223,8 +225,8 @@
                    <p class="catalog-item-about">
                      <a href="#">Сайт для ресторана быстрого питания
                      </a>
-                   </p> 
-                   <a class="btn catalog-item-btn" href="#">12000 р.</a>                  
+                   </p>                     
+                     <a class="btn catalog-item-btn" href="#">12000 р.</a>     
                  </div>
                </article>
               
@@ -307,7 +309,26 @@
           </div>
         </footer>
       
-        
+        <!-- модальное окно -->
+      
+        <div class="modal-content">
+          <button class="btn modal-content-close" type="button" title="закрыть">закрыть</button>
+           <form class="write-us" method="post" id="write-us">
+             <label for="write-name">
+               <p class="write-us-p">Ваше имя:</p> 
+               <input class="write-us-field" type="text" name="name" id="write-name" placeholder="представьтесь, пожалуйста">
+             </label>         
+             <label for="write-email">
+               <p class="write-us-p">Ваш e-mail:</p>
+               <input class="write-us-field" type="text" name="email" id="write-email" placeholder="для отправки ответа">
+             </label>         
+             <label for="mail-text">
+               <p class="write-us-p">Текст письма:</p>
+              <textarea class="write-us-text" form="write-us" name="mail-text" id="mail-text">в свободной форме</textarea> 
+             </label>        
+             <button class="btn write-us-btn" type="submit">отправить</button>  
+          </form>    
+        </div> 
    
   </body>
 </html>
