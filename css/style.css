@@ -80,8 +80,17 @@ fieldset {
   position: relative;
   padding-left: 20px;
   padding-bottom: 21px;
+  
+  color: #283136;
+  
   cursor: pointer;
 }
+
+.filter-modules label:hover,
+.filter-grids label:hover {
+  color: #000;
+}
+
 
 .filter-modules input[type="checkbox"] + .filter-modules-checkbox-indicator {
   position: absolute;
@@ -92,6 +101,8 @@ fieldset {
   width: 17px;
   height: 17px;
 }
+
+
 
 .filter-modules input[type="checkbox"]:checked + .filter-modules-checkbox-indicator::before {
   content: "";
@@ -144,6 +155,21 @@ fieldset {
   height: 8px;
   background-color: #c1c1c1;
   border-radius: 50%;
+}
+
+.filter-modules input[type="checkbox"]:hover + .filter-modules-checkbox-indicator:hover,
+.filter-grids input[type="radio"]:hover + .filter-grids-radio-indicator:hover {
+  border-color: #b5b5b5;
+}
+
+.filter-grids input[type="radio"]:checked:hover + .filter-grids-radio-indicator:hover::before {
+  background-color: #b5b5b5;
+}
+
+
+.filter-modules input[type="checkbox"]:checked:hover + .filter-modules-checkbox-indicator:hover::after,
+.filter-modules input[type="checkbox"]:checked:hover + .filter-modules-checkbox-indicator:hover::before {
+  background-color: #b5b5b5;  
 }
 
 .main-header {  
@@ -935,6 +961,12 @@ fieldset {
 
 .catalog-item-form:hover {
   opacity: 1;
+  animation: form 1s;
+}
+
+@keyframes form {
+  from {transform: scale(0.9)};
+  to {transform: scale(1)};
 }
 
 
@@ -1066,23 +1098,15 @@ fieldset {
   left: -7px;
 }
 
-.items-filter-controls-down:active {
-  border: 10px solid #000;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-bottom-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent; 
-} 
 
-.items-filter-controls-down:hover {
-  border: 10px solid #c1c1c1;
+.items-filter-controls > .active-down {
+  border: 10px solid #00ca74;
   border-left-width: 5px;
   border-right-width: 5px;
   border-bottom-width: 0;
   border-left-color: transparent;
-  border-right-color: transparent; 
-} 
+  border-right-color: transparent;
+}
 
 .items-filter-controls-up {
   content: "";
@@ -1116,6 +1140,24 @@ fieldset {
   border-left-color: transparent;
   border-right-color: transparent;  
 }
+
+.items-filter-controls-down:hover {
+  border: 10px solid #c1c1c1;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 0;
+  border-left-color: transparent;
+  border-right-color: transparent; 
+} 
+
+.items-filter-controls-down:active {
+  border: 10px solid #000;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 0;
+  border-left-color: transparent;
+  border-right-color: transparent; 
+} 
 
 
 /*пагинатор*/
@@ -1173,8 +1215,31 @@ fieldset {
   display: none;
 }
 
+/*анимация*/
+@keyframes bounce {
+  from {transform: translateX(-1000px);}
+  to {transform: translateX(0);}  
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content-show {
   display: block;
+  animation: bounce 0.5s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-content-close {
