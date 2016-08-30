@@ -78,12 +78,12 @@ fieldset {
 .filter-grids label {
   display: block;
   position: relative;
-  padding-left: 20px;
-  padding-bottom: 21px;
+  padding-left: 18px;
+  padding-bottom: 22px;
   
-  color: #283136;
-  
-  cursor: pointer;
+  color: #283136;  
+  cursor: pointer; 
+
 }
 
 .filter-modules label:hover,
@@ -98,8 +98,8 @@ fieldset {
   top: -3px;
   border: 2px solid #c1c1c1;
   border-radius: 5px;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -180,7 +180,7 @@ fieldset {
 
 .title-wrapper {
   background-color: #eeeeee;
-  padding-top: 34px;
+  padding-top: 36px;
   padding-bottom: 56px;
   margin-bottom: 80px;
 }
@@ -345,12 +345,12 @@ fieldset {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 87px;
   left: 50%;
   z-index: 10;
 
   width: 200px;
-  margin-left: -100px;
+  margin-left: -110px;
 
   text-align: center;
 }
@@ -371,7 +371,7 @@ fieldset {
 
 .slide-text {
   width: 500px;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 }
 
 .slide-title {  
@@ -387,8 +387,8 @@ fieldset {
 .slide .btn {
   display: block;
   width: 220px;
-  margin-top: 25px;
-  padding: 12px 10px;  
+  margin-top: 30px;
+  padding: 10px 10px;  
   font-size: 12px;
   text-align: center;
   color: #ffffff;
@@ -467,7 +467,7 @@ fieldset {
 .services p {
   font-size: 15px;
   line-height: 22px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .service-title {
@@ -536,21 +536,20 @@ fieldset {
   box-shadow: inset 0 2px 0 0 #a3841f;
 }
 
-.about-us {
-  margin-bottom: 2px;
-}
+
 
 .about-us-left-column {
   width: 620px;
   float: left;   
 }
 
-.about-us-left-column h2 {
-  
+.about-us-left-column h2 {  
   margin-top: 70px;
-  margin-bottom: 15px;
-  padding-right: 85px;
+  margin-bottom: 17px;  
   font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000;
 }
 
 .about-us-left-column h3,
@@ -582,7 +581,7 @@ fieldset {
 
 .about-us-left-column li:last-child,
 .about-us-right-column li:last-child {
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 
 .about-us-left-column li::before,
@@ -607,9 +606,9 @@ fieldset {
 
 .about-us-logo span {
   display: block;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 68px;
-  padding: 0 75px;
+  padding: 0 70px 0 80px;
   position: relative;  
   line-height: 16px;
   text-transform: uppercase;
@@ -618,7 +617,7 @@ fieldset {
 .about-us-logo span::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 0;
   width: 65px;
   height: 2px;
@@ -628,7 +627,7 @@ fieldset {
 .about-us-logo span::after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 8px;
   right: 0;
   width: 65px;
   height: 2px;
@@ -637,22 +636,29 @@ fieldset {
 }
 
 .our-clients {   
-  margin: 0 -45px 85px -75px;
+  margin: 0 0 85px 0;
   border-bottom: 2px solid #eeeeee;
-  border-top: 2px solid #eeeeee;  
+  border-top: 2px solid #eeeeee; 
+  
+  padding-top: 45px;
+  padding-bottom:  26px;
+  
 }
 
 .our-clients-logo {
   width: 210px;
   display: inline-block;
-  vertical-align: middle;
-  margin: 40px 45px 30px 75px;  
+  vertical-align: middle;   
   opacity: 0.3;
+  
+  margin: 0 10px 0 10px;
 }
 
-.our-clients-logo:last-child {
-  margin-right: 10px;
+.our-clients-logo:nth-child(3n+2) {
+  margin-left: 100px;
+  margin-right: 100px;
 }
+
 
 .our-clients-logo:hover {
   opacity: 1;
@@ -669,14 +675,16 @@ fieldset {
 
 .map-address {
   display: block;
-  width: 204px;
-  height: 204px;
-  padding: 18px 22px;
+  width: 204px;  
   background-color: #ffffff;
   margin-bottom: 0;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 17px;
+  padding-bottom: 26px;
     
   position: absolute;
-  bottom: 90px;   
+  bottom: 88px;   
 }
    
 .map-address p {
@@ -684,29 +692,22 @@ fieldset {
   line-height: 20px;  
 }
 
-.map-address .map-address-phone {
-  margin-bottom: 20px;
-}
-
-.map-address span {
-  color: #000;
+.map-address .map-address-name {
   text-transform: uppercase;
+  color: #000;
 }
 
-.map-img img {
-  display: block;
-  margin: 0 auto;
-}
 
 .map-write-btn {
   box-sizing: border-box;
-  width: 100%;
+  width: 100%;  
+  margin-top: 15px;
 }
 
 /* футер */
 
 .page-footer {
-  padding: 70px 0 70px 0;  
+  padding: 75px 0 58px 0;  
 }
 
 .page-footer-socials {
@@ -714,6 +715,8 @@ fieldset {
   float: left;
   margin-right: 80px;  
   font-size: 0;
+  
+  padding-top: 2px;
 }
 
 .page-footer-socials a {
@@ -787,9 +790,14 @@ fieldset {
 
 .page-footer-text span {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 36px;  
 }
 
+.page-footer-text p {
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 0;
+}
 
 
 .catalog-title h1 {  
@@ -813,15 +821,17 @@ fieldset {
 
 .filters legend {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   text-transform: uppercase;
   margin-top: 0;
-  padding: 0;
-  margin-bottom: 17px;
+  padding: 0;  
+  margin-bottom: 20px;
+  
 }
 
 .filter-range {
   width: 240px;
+  margin-bottom: 15px;
 }
 
 .filter-range-controls {
@@ -860,11 +870,11 @@ fieldset {
 }
 
 .filter-range-controls .toogle-min {
-  left: 0px;
+  left: 20px;
 }
 
 .filter-range-controls .toogle-max {
-  left: 150px;
+  left: 160px;
 }
 
 .filter-range-cost {
@@ -908,7 +918,7 @@ fieldset {
   vertical-align: top; 
   margin-bottom: 80px;  
   background-color: #f1f1f1;
-  border-radius: 10px 10px 0 0;  
+  border-radius: 5px 5px 0 0;  
   font-size: 0;
   padding-top: 30px;
    
@@ -1018,7 +1028,7 @@ fieldset {
 
 .items-filter {  
   margin-bottom: 15px;
-  min-height: 20px;
+  min-height: 23px;
   
 }
 
@@ -1162,7 +1172,7 @@ fieldset {
 
 /*пагинатор*/
 .paginator {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   font-size: 0;  
 }
 
@@ -1186,27 +1196,28 @@ fieldset {
 .paginator a {    
   text-decoration: none;
   color: #000;
-  padding: 10px 15px;
+  padding: 10px 16px;
 }
 
 
 .paginator-active {
-  padding: 8px 13px;
-  border: 1px solid #f1f1f1;
+  padding: 8px 16px;
+  box-shadow: inset 0 0 0 2px #f1f1f1;  
   background-color: #fff;
 }
+
 
 /*модальное окно*/
 
 .modal-content {
   position: absolute;
   top: 50%;
-  left: 50%;  
-  margin-left: -440px;
-  margin-top: 985px;
-    
-  width: 470px;
-  padding: 50px 80px;
+  left: 50%;
+  margin-left: -315px;
+  margin-top: 1010px;   
+  
+  padding: 50px 80px 50px 90px;
+  width: 460px;
   
   color: #000;
   background-color: #fff;
@@ -1305,6 +1316,11 @@ fieldset {
 .write-us label:nth-child(2) {
   margin-right: 0;
 }
+
+.write-us-text {
+  margin-right: 0;
+}
+
 
 .write-us-field {
   width: 196px;
