@@ -885,8 +885,13 @@ fieldset {
   font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
-  width: 50%;
+  width: 50%; 
 }
+
+.filter-range-cost label:last-child {
+  margin-right: 0;
+}
+
 
 .filter-range-cost input {
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -900,6 +905,10 @@ fieldset {
   border-radius: 3px;
   outline: none;
   background: #f1f1f1;
+}
+
+.filters-form button {
+  padding: 10px 47px;
 }
 
 .column-right-items {
@@ -1104,8 +1113,8 @@ fieldset {
   border-right-color: transparent;
   margin-right: 7px;
   position: absolute;
-  top: 6px;
-  left: -7px;
+  top: 2px;
+  left: 0;
 }
 
 
@@ -1129,8 +1138,8 @@ fieldset {
   border-right-color: transparent;
   
   position: absolute;
-  top: -13px;
-  left: 10px;
+  top: -16px;
+  left: 17px;
 }
 
 .items-filter-controls-up:hover {    
@@ -1204,6 +1213,10 @@ fieldset {
   padding: 8px 16px;
   box-shadow: inset 0 0 0 2px #f1f1f1;  
   background-color: #fff;
+}
+
+.paginator .paginator-next {
+  padding: 10px 30px;
 }
 
 
@@ -1308,7 +1321,8 @@ fieldset {
 
 }
 
-.write-us-p {
+.write-us-span {
+  display: block;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -1340,8 +1354,13 @@ fieldset {
 
 .write-us input[placeholder] {
   text-transform: uppercase;
-  font-size: 12px;    
+  font-size: 12px;   
 }
+
+.write-us input::-webkit-input-placeholder {color:#000;}
+.write-us input::-moz-placeholder          {color:#000;}/*Firefox 19+*/
+.write-us input:-moz-placeholder           {color:#000;}/*Firefox 18-*/
+.write-us input:-ms-input-placeholder      {color:#000;}
 
 .write-us-text {
   border: 2px solid #d7dcde;
