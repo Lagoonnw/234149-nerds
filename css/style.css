@@ -216,6 +216,7 @@ fieldset {
 
 .main-navigation li {
   display: inline-block;  
+  vertical-align: top;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -887,6 +888,7 @@ fieldset {
   text-transform: uppercase;
   display: inline-block;
   width: 50%; 
+  vertical-align: top;
 }
 
 .filter-range-cost label:last-child {
@@ -1025,6 +1027,7 @@ fieldset {
 
 .catalog-item-btn {  
   display: inline-block;
+  vertical-align: top;
   font-size: 18px;
   line-height: 18px; 
   text-align: center;
@@ -1318,6 +1321,7 @@ fieldset {
   line-height: 18px;
   
   display: inline-block;
+  vertical-align: top;
   margin-right: 20px;
   margin-bottom: 20px;
 
