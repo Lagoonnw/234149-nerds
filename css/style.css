@@ -549,6 +549,8 @@ fieldset {
   font-size: 36px;
   line-height: 36px;
   color: #000;
+  letter-spacing: 1px;
+
 }
 
 .about-us-left-column h3,
@@ -634,28 +636,27 @@ fieldset {
   
 }
 
-.our-clients {   
+.our-clients-wrapper {
   margin: 0 0 85px 0;
+  padding: 46px 30px 20px;
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee; 
-  
-  padding-top: 45px;
-  padding-bottom:  26px;
+}
+
+.our-clients {    
+  margin: 0 -45px;
   
 }
 
 .our-clients-logo {
   width: 210px;
   display: inline-block;
-  vertical-align: middle;   
+  vertical-align: bottom;   
   opacity: 0.3;
+  height: 100px;
+  line-height: 100px;
   
-  margin: 0 10px 0 10px;
-}
-
-.our-clients-logo:nth-child(3n+2) {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 45px;
 }
 
 
@@ -807,7 +808,8 @@ fieldset {
 
 .catalog-title h1 {  
   text-align: center;
-  text-transform: uppercase;  
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 /*фильтр в каталоге*/
@@ -1103,82 +1105,46 @@ fieldset {
   width: 28px;
   height: 20px;
   float: right;
-  position: relative;
-}
-
-.items-filter-controls-down {  
   font-size: 0;
-  border: 10px solid #c1c1c1;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-bottom-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  margin-right: 7px;
-  position: absolute;
-  top: 2px;
-  left: 0;
+  display: inline-block;
+  vertical-align: top;  
+  
 }
 
+.items-filter-controls-down {   
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #c1c1c1;  
+}
+
+.items-filter-controls-up {  
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #c1c1c1;  
+}
 
 .items-filter-controls > .active-down {
-  border: 10px solid #00ca74;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-bottom-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
-
-.items-filter-controls-up {
-  content: "";
-  font-size: 0;
-  border: 10px solid #c1c1c1;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  
-  position: absolute;
-  top: -16px;
-  left: 17px;
+  border-top-color: #00ca74;
 }
 
 .items-filter-controls-up:hover {    
-  border: 10px solid #c1c1c1;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent;  
+  border-bottom: 10px solid #c1c1c1;  
 }
 
 .items-filter-controls-up:active {    
-  border: 10px solid #000;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-top-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent;  
+  border-bottom: 10px solid #000; 
 }
 
 .items-filter-controls-down:hover {
-  border: 10px solid #c1c1c1;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-bottom-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent; 
+   border-top: 10px solid #c1c1c1; 
 } 
 
 .items-filter-controls-down:active {
-  border: 10px solid #000;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-bottom-width: 0;
-  border-left-color: transparent;
-  border-right-color: transparent; 
+   border-top: 10px solid #000; 
 } 
 
 
