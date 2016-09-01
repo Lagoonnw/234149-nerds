@@ -928,12 +928,10 @@ fieldset {
   min-height: 240px;
   display: inline-block;
   vertical-align: top; 
-  margin-bottom: 80px;  
-  background-color: #f1f1f1;
+  margin-bottom: 80px;   
   border-radius: 5px 5px 0 0;  
-  font-size: 0;
-  padding-top: 30px;
-   
+  border-top: 30px solid #f1f1f1;
+  font-size: 0;   
   position: relative;
 }
 
@@ -942,7 +940,7 @@ fieldset {
 }
 
 .catalog-item:hover {
-  background-color: #797979;
+  border-color: #797979;
 }
 
 .catalog-item::before {
@@ -956,7 +954,7 @@ fieldset {
     34px 0 0 #fff;
   position: absolute;
   left: 13px;
-  top: 10px;
+  top: -20px;
   opacity: 0.7;
 }
 
