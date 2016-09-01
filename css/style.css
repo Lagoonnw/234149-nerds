@@ -987,7 +987,7 @@ fieldset {
   position: absolute;  
   top: 50%;
   left: 50%;
-  margin: -85px 0 0 -100px;
+  margin: -100px 0 0 -100px;
   background-color: #ffffff; 
   
   display: none;
