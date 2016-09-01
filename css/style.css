@@ -666,14 +666,16 @@ fieldset {
 }
 
 .map-wrapper {
-  min-height: 415px;  
-}
-
-.map {
+  min-height: 415px; 
   position: relative;
 }
 
 
+.map {
+  position: absolute;
+  z-index: 5;
+  top: 88px;
+}
 .map-address {
   display: block;
   width: 204px;  
@@ -682,12 +684,12 @@ fieldset {
   padding-left: 23px;
   padding-right: 23px;
   padding-top: 17px;
-  padding-bottom: 26px;
-    
-  position: absolute;
-  bottom: 88px;   
+  padding-bottom: 26px;  
 }
+
+
    
+
 .map-address p {
   color: #666666;
   line-height: 20px;  
