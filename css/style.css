@@ -376,11 +376,16 @@ fieldset {
 .slide-title {  
   font-size: 36px;
   line-height: 36px;
+  max-height: 72px;
+  overflow: hidden;
+  
 }
 
 .slide p {  
   line-height: 22px;
   color: #283136;
+  max-height: 70px;
+  overflow: hidden;
 }
 
 .slide .btn {
@@ -475,6 +480,8 @@ fieldset {
   text-transform: uppercase;  
   margin-top: 19px;
   margin-bottom: 14px;
+  max-height: 60px;
+  overflow: hidden;
 }
 
 
@@ -796,12 +803,16 @@ fieldset {
 
 .page-footer-text span {
   font-size: 36px;
-  line-height: 36px;  
+  line-height: 36px; 
+  max-height: 72px;
+  overflow: hidden;
 }
 
 .page-footer-text p {
   font-size: 16px;
   line-height: 16px;
+  max-height: 48px;
+  overflow: hidden;
   padding-top: 0;
 }
 
