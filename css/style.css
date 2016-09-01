@@ -704,6 +704,12 @@ fieldset {
   margin-top: 15px;
 }
 
+.map-wrapper {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* футер */
 
 .page-footer {
@@ -714,9 +720,7 @@ fieldset {
   width: 240px;
   float: left;
   margin-right: 80px;  
-  font-size: 0;
-  
-  padding-top: 2px;
+  font-size: 0;  
 }
 
 .page-footer-socials a {
@@ -802,10 +806,7 @@ fieldset {
 
 .catalog-title h1 {  
   text-align: center;
-  text-transform: uppercase;
-  padding-left: 75px;
-  padding-right: 80px;
-  
+  text-transform: uppercase;  
 }
 
 /*фильтр в каталоге*/
@@ -966,6 +967,7 @@ fieldset {
   height: 240px;
 }
 
+
 .catalog-item-form {  
   width: 200px;  
   height: 200px;
@@ -975,11 +977,11 @@ fieldset {
   margin: -85px 0 0 -100px;
   background-color: #ffffff; 
   
-  opacity: 0;
+  display: none;
 }
 
-.catalog-item-form:hover {
-  opacity: 1;
+.catalog-item:hover .catalog-item-form {
+  display: block;
   animation: form 1s;
 }
 
@@ -1333,6 +1335,7 @@ fieldset {
 
 .write-us-text {
   margin-right: 0;
+  resize: none;
 }
 
 

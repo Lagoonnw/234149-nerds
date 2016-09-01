@@ -6,6 +6,8 @@ var login = popup.querySelector("[name=write-name]");
 var email = popup.querySelector("[name=e-mail]");
 var storage = localStorage.getItem("login");
 
+ 
+
 link.addEventListener("click", function (event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");  
@@ -35,3 +37,4 @@ form.addEventListener("submit", function (event) {
     localStorage.setItem("login", login.value);
   }
 });
+
