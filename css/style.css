@@ -65,7 +65,7 @@ fieldset {
   padding: 0;
   margin: 0;
   
-  margin-bottom: 35px;
+  margin-bottom: 52px;
 }
 
 .filter-modules input[type="checkbox"] {
@@ -77,12 +77,17 @@ fieldset {
   display: block;
   position: relative;
   padding-left: 18px;
-  padding-bottom: 22px;
+  margin-bottom: 23px;
   
   color: #283136;  
   cursor: pointer; 
-
 }
+
+.filter-modules label:last-child,
+.filter-grids label:last-child {
+  margin-bottom: 0;
+}
+
 
 .filter-modules label:hover,
 .filter-grids label:hover {
@@ -93,7 +98,7 @@ fieldset {
 .filter-modules input[type="checkbox"] + .filter-modules-checkbox-indicator {
   position: absolute;
   left: 0;
-  top: -3px;
+  top: -2px;
   border: 2px solid #c1c1c1;
   border-radius: 5px;
   width: 18px;
@@ -110,7 +115,8 @@ fieldset {
   width: 5px;
   height: 12px;
   background-color: #c1c1c1;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   z-index: 2;
 }
 
@@ -122,7 +128,8 @@ fieldset {
   width: 5px;
   height: 17px;
   background-color: #c1c1c1;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   box-shadow: 0 0 0 2px #fff;
   z-index: 1;
 }
@@ -178,9 +185,9 @@ fieldset {
 
 .title-wrapper {
   background-color: #eeeeee;
-  padding-top: 36px;
-  padding-bottom: 56px;
-  margin-bottom: 80px;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  margin-bottom: 81px;
 }
 
 .container {
@@ -275,8 +282,8 @@ fieldset {
 .cart::before {
   content: "";
   position: absolute;  
-  top: 6px;
-  left: 7px;
+  top: 5px;
+  left: 6px;
   width: 15px;
   height: 15px;
   
@@ -287,7 +294,7 @@ fieldset {
 .cart:hover::before {
   content: "";
   position: absolute;
-  left: 7px;
+  left: 6px;
   width: 15px;
   height: 15px;
   
@@ -334,7 +341,6 @@ fieldset {
   background-position: 100% 10px;
 
   -webkit-transition: left 0.3s ease;
-     -moz-transition: left 0.3s ease;
           transition: left 0.3s ease;
 }
 
@@ -485,8 +491,6 @@ fieldset {
 }
 
 
-
-
 .service-btn-red,
 .map-write-btn,
 .catalog-item-btn {
@@ -556,7 +560,7 @@ fieldset {
   font-size: 36px;
   line-height: 36px;
   color: #000;
-  letter-spacing: 1px;
+  letter-spacing: -0.1px;
 
 }
 
@@ -645,13 +649,13 @@ fieldset {
 
 .our-clients-wrapper {
   margin: 0 0 85px 0;
-  padding: 46px 30px 20px;
+  padding: 46px 10px 20px;
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee; 
 }
 
 .our-clients {    
-  margin: 0 -45px;
+  margin: 0 -53px;
   
 }
 
@@ -663,7 +667,7 @@ fieldset {
   height: 100px;
   line-height: 100px;
   
-  margin: 0 45px;
+  margin: 0 53px;
 }
 
 
@@ -689,34 +693,36 @@ fieldset {
   margin-bottom: 0;
   padding-left: 23px;
   padding-right: 23px;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 26px;  
 }
 
 
-   
-
-.map-address p {
+.map-address p {   
   color: #666666;
-  line-height: 20px;  
+  line-height: 20px;    
 }
 
 .map-address .map-address-name {
   text-transform: uppercase;
-  color: #000;
+  color: #000;  
 }
 
+.map-address .map-address-phone {
+  margin-top: 20px;
+}
 
 .map-write-btn {
   box-sizing: border-box;
   width: 100%;  
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .map-wrapper {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #e9e5dc;
 }
 
 /* футер */
@@ -726,9 +732,9 @@ fieldset {
 }
 
 .page-footer-socials {
-  width: 240px;
+  width: 280px;
   float: left;
-  margin-right: 80px;  
+  margin-right: 40px;  
   font-size: 0;  
 }
 
@@ -740,6 +746,7 @@ fieldset {
   border-radius: 50%;
   background-color: #e1e1e1;
   margin-right: 28px;
+  margin-top: 3px;
   
   
   font-size: 0;
@@ -820,7 +827,7 @@ fieldset {
 .catalog-title h1 {  
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.7px;
 }
 
 /*фильтр в каталоге*/
@@ -845,8 +852,7 @@ fieldset {
 }
 
 .filter-range {
-  width: 240px;
-  margin-bottom: 15px;
+  width: 240px;  
 }
 
 .filter-range-controls {
@@ -900,12 +906,13 @@ fieldset {
   font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
-  width: 50%; 
   vertical-align: top;
+  width: 50%;   
 }
 
-.filter-range-cost label:last-child {
-  margin-right: 0;
+
+.filter-range-cost .max-cost {
+  text-align: right;
 }
 
 
@@ -913,7 +920,7 @@ fieldset {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;  
   width: 60px;
-  margin-left: 10px;
+  margin-left: 5px;
   padding: 10px 10px;
   text-align: center;
   color: #283136;
@@ -925,6 +932,7 @@ fieldset {
 
 .filters-form button {
   padding: 10px 47px;
+  margin-top: 5px; 
 }
 
 .column-right-items {
@@ -994,13 +1002,7 @@ fieldset {
 }
 
 .catalog-item:hover .catalog-item-form {
-  display: block;
-  animation: form 1s;
-}
-
-@keyframes form {
-  from {transform: scale(0.9)};
-  to {transform: scale(1)};
+  display: block;  
 }
 
 
@@ -1114,12 +1116,10 @@ fieldset {
 
 .items-filter-controls {
   width: 28px;
-  height: 20px;
+  height: 20px;  
   float: right;
-  font-size: 0;
-  display: inline-block;
-  vertical-align: top;  
-  
+  font-size: 0;  
+  padding-top: 2px;
 }
 
 .items-filter-controls-down {   
@@ -1127,15 +1127,21 @@ fieldset {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #c1c1c1;  
+  border-top: 10px solid #c1c1c1; 
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
 }
+
 
 .items-filter-controls-up {  
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid #c1c1c1;  
+  border-bottom: 10px solid #c1c1c1;   
+  display: inline-block;
+  vertical-align: top;
 }
 
 .items-filter-controls > .active-down {
@@ -1161,7 +1167,7 @@ fieldset {
 
 /*пагинатор*/
 .paginator {
-  margin-bottom: 78px;
+  margin-bottom: 79px;
   font-size: 0;  
 }
 
@@ -1221,30 +1227,54 @@ fieldset {
 }
 
 /*анимация*/
+@-webkit-keyframes bounce {
+  from {-webkit-transform: translateX(-1000px);transform: translateX(-1000px);}
+  to {-webkit-transform: translateX(0);transform: translateX(0);}  
+}
 @keyframes bounce {
-  from {transform: translateX(-1000px);}
-  to {transform: translateX(0);}  
+  from {-webkit-transform: translateX(-1000px);transform: translateX(-1000px);}
+  to {-webkit-transform: translateX(0);transform: translateX(0);}  
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.5s;
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -1270,7 +1300,8 @@ fieldset {
   width: 5px;
   height: 25px;
   background-color: #fff;
-  transform: rotate(45deg);  
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);  
   position: absolute;
   top: 8px;
   left: 18px
@@ -1282,7 +1313,8 @@ fieldset {
   width: 5px;
   height: 25px;
   background-color: #fff;
-  transform: rotate(-45deg);  
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);  
   position: absolute;
   top: 8px;
   left: 18px;  

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -69,12 +69,12 @@
                       </div> 
                   
                       <div class="filter-range-cost">
-                        <label for="min-cost">от
+                        <label class="min-cost">от
                           <input type="text" id="min-cost" value="0">
                         </label>
                         
                         
-                        <label for="max-cost">до
+                        <label class="max-cost">до
                           <input type="text" id="max-cost" value="15000">
                         </label>    
                         
@@ -86,21 +86,21 @@
                 <fieldset class="filter-grids">
                   <legend>Сетка:</legend>
                   
-                      <label for="responsive">
+                      <label>
                         <input type="radio" name="grid" id="responsive" checked>
                           <span class="filter-grids-radio-indicator"></span>
                         Адаптивная
                       </label>
                       
                     
-                      <label for="fixed">
+                      <label>
                         <input type="radio" name="grid" id="fixed">
                           <span class="filter-grids-radio-indicator"></span>  
                         Фиксированная
                       </label>
                       
                     
-                      <label for="fluid">
+                      <label>
                         <input type="radio" name="grid" id="fluid">
                           <span class="filter-grids-radio-indicator"></span>
                         Резиновая
@@ -111,34 +111,34 @@
                 <fieldset class="filter-modules">
                   <legend>Особенности:</legend>
                   
-                      <label for="slider">
+                      <label>
                         <input type="checkbox" name="slider" id="slider" checked>     
                           <span class="filter-modules-checkbox-indicator"></span>
                         Слайдер
                       </label>
                       
                     
-                      <label for="advantages">
+                      <label>
                         <input type="checkbox" name="advantages" id="advantages">
                           <span class="filter-modules-checkbox-indicator"></span>
                         Блок преимуществ
                       </label>
                       
                     
-                      <label for="news">
+                      <label>
                         <input type="checkbox" name="news" id="news" checked>
                           <span class="filter-modules-checkbox-indicator"></span>
                         Новости
                       </label>
                       
                     
-                      <label for="gallery">
+                      <label>
                          <input type="checkbox" name="gallery" id="gallery">
                            <span class="filter-modules-checkbox-indicator"></span>
                          Галерея
                       </label>
                    
-                      <label for="cart">
+                      <label>
                         <input type="checkbox" name="cart" id="cart">
                           <span class="filter-modules-checkbox-indicator"></span>
                         Корзина
@@ -162,8 +162,8 @@
                 <li><a href="#">По функционалу</a></li>
               </ul>
               <div class="items-filter-controls">
-                <a href="#" class="items-filter-controls-down active-down">вниз</a> 
-                <a href="#" class="items-filter-controls-up">вверх</a>  
+                <a href="#" class="items-filter-controls-down active-down"></a> 
+                <a href="#" class="items-filter-controls-up"></a>  
               </div>
             </div>  
             
@@ -283,7 +283,9 @@
             <div class="map-address">
               <p class="map-address-name">nёrds design studio</p>
               <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-              <p class="map-address-phone">тел. +7 (812) 275-75-75</p>   
+              <div class="map-address-phone">
+                <p>тел. +7 (812) 275-75-75</p>   
+              </div> 
               <a class="btn map-write-btn" href="form.html">напишите нам</a>    
              </div>   
           </div> 
@@ -328,7 +330,7 @@
     </div>
     
     
-    <script src="js/script.js"></script>
+    <script src="js/min.js"></script>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yWFhp-KiCalvKTJ02pRcF48aC85eirLO&amp;width=100%&amp;height=416&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
   
