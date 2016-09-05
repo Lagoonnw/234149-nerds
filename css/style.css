@@ -142,20 +142,19 @@ fieldset {
   background-color: #b5b5b5;  
 }
 /*disabled*/
-.filter-modules input[type="checkbox"]:disabled + .filter-modules-checkbox-indicator:disabled,
-.filter-grids input[type="radio"]:disabled + .filter-grids-radio-indicator:hover {
+.filter-modules input[type="checkbox"]:disabled + .filter-modules-checkbox-indicator,
+.filter-grids input[type="radio"]:disabled + .filter-grids-radio-indicator {
   border-color: #e9e9e9;
 }
-.filter-grids input[type="radio"]:checked:disabled + .filter-grids-radio-indicator:disabled::before {
+.filter-grids input[type="radio"]:checked:disabled + .filter-grids-radio-indicator::before {
   background-color: #e9e9e9;
 }
-.filter-modules input[type="checkbox"]:checked:disabled + .filter-modules-checkbox-indicator:disabled::after,
-.filter-modules input[type="checkbox"]:checked:disabled + .filter-modules-checkbox-indicator:disabled::before {
+.filter-modules input[type="checkbox"]:checked:disabled + .filter-modules-checkbox-indicator::after,
+.filter-modules input[type="checkbox"]:checked:disabled + .filter-modules-checkbox-indicator::before {
   background-color: #e9e9e9;  
 }
-.filter-modules label:disabled,
-.filter-grids label:disabled {
-  color: #a9adaf;
+.filters-form .filters-disabled {
+  color: #e9e9e9;
 }
 .main-header {  
   background-color: #eeeeee;
