@@ -554,13 +554,20 @@ fieldset {
   position: absolute;
   height: 416px;
   left: 50%;
-  margin-left: -440px;
-  margin-top: -416px;
+  margin-left: -440px;  
+  z-index: 3;
 }
+
+.map-wrapper .yandex-map {
+  position: absolute;
+  height: 416px;
+  width: 100%;
+  z-index: 2;
+} 
 .map {
   position: absolute;
-  z-index: 5;
-  top: 88px;
+  z-index: 5; 
+  top: 88px;  
 }
 .map-address {
   display: block;
