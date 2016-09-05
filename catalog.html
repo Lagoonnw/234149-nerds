@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -79,17 +79,17 @@
               <fieldset class="filter-grids">
                 <legend>Сетка:</legend>
                 <label class="filters-disabled">
-                  <input type="radio" name="grid" id="responsive" checked disabled>
+                  <input class="filter-grids-radio" type="radio" name="grid" id="responsive" checked disabled>
                     <span class="filter-grids-radio-indicator"></span>
                     Адаптивная
                   </label>
                  <label>
-                   <input type="radio" name="grid" id="fixed">
+                   <input class="filter-grids-radio" type="radio" name="grid" id="fixed">
                      <span class="filter-grids-radio-indicator"></span>  
                   Фиксированная
                  </label>
                  <label>
-                   <input type="radio" name="grid" id="fluid">
+                   <input class="filter-grids-radio" type="radio" name="grid" id="fluid">
                      <span class="filter-grids-radio-indicator"></span>
                     Резиновая
                  </label>
@@ -97,27 +97,27 @@
                <fieldset class="filter-modules">
                  <legend>Особенности:</legend>                  
                  <label>
-                   <input type="checkbox" name="slider" id="slider" checked>     
+                   <input class="filter-modules-checkbox" type="checkbox" name="slider" id="slider" checked>     
                    <span class="filter-modules-checkbox-indicator"></span>
                      Слайдер
                   </label>
                   <label class="filters-disabled">
-                    <input type="checkbox" name="advantages" id="advantages"  disabled>
+                    <input class="filter-modules-checkbox" type="checkbox" name="advantages" id="advantages"  disabled>
                     <span class="filter-modules-checkbox-indicator"></span>
                       Блок преимуществ
                   </label>
                   <label>
-                    <input type="checkbox" name="news" id="news" checked>
+                    <input class="filter-modules-checkbox" type="checkbox" name="news" id="news" checked>
                     <span class="filter-modules-checkbox-indicator"></span>
                       Новости
                   </label>
                   <label>
-                    <input type="checkbox" name="gallery" id="gallery">
+                    <input class="filter-modules-checkbox" type="checkbox" name="gallery" id="gallery">
                     <span class="filter-modules-checkbox-indicator"></span>
                       Галерея
                   </label>
                   <label>
-                    <input type="checkbox" name="cart" id="cart">
+                    <input class="filter-modules-checkbox" type="checkbox" name="cart" id="cart">
                     <span class="filter-modules-checkbox-indicator"></span>
                       Корзина
                   </label>
