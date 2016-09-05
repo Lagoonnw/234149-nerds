@@ -584,6 +584,10 @@ fieldset {
 .map-address .map-address-phone {
   margin-top: 20px;
 }
+.map-address-phone a {
+  text-decoration: none;
+  color: #666666;
+}
 .map-write-btn {
   box-sizing: border-box;
   width: 100%;  
