@@ -1110,10 +1110,10 @@ fieldset {
 .write-us-text:focus {
   border-color: #56bffb;
 }
-.write-us input::-webkit-input-placeholder {color:#000;}
-.write-us input::-moz-placeholder          {color:#000;}/*Firefox 19+*/
-.write-us input:-moz-placeholder           {color:#000;}/*Firefox 18-*/
-.write-us input:-ms-input-placeholder      {color:#000;}
+.write-us input::-webkit-input-placeholder {color:#000; opacity: 1;}
+.write-us input::-moz-placeholder          {color:#000; opacity: 1;}/*Firefox 19+*/
+.write-us input:-moz-placeholder           {color:#000; opacity: 1;}/*Firefox 18-*/
+.write-us input:-ms-input-placeholder      {color:#000; opacity: 1;}
 .write-us input[placeholder] {
   text-transform: uppercase;
   font-size: 12px;   
