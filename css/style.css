@@ -348,7 +348,6 @@ fieldset {
 #btn-1:checked ~ .slider .slide:nth-child(3) {
   left: 880px;
 }
-
 #btn-2:checked ~ .slider .slide:nth-child(1) {
   left: -880px;
 }
